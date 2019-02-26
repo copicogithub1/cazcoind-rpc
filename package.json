@@ -1,5 +1,5 @@
 {
-  "name": "@cazcoin/cazcoind-rpc",
+  "name": "@cazproject/cazcoind-rpc",
   "description": "Cazcoin Client Library to connect to Cazcoin Core (cazcoind) via RPC",
   "version": "1.2.2",
   "author": {

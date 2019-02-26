@@ -1,7 +1,7 @@
 # cazcoind-rpc
 
 [![Build Status](https://img.shields.io/travis/cazcoin/cazcoind-rpc.svg?branch=master)](https://travis-ci.org/cazcoin/cazcoind-rpc)
-[![NPM Package](https://img.shields.io/npm/v/@cazcoin/cazcoind-rpc.svg)](https://www.npmjs.org/package/@cazcoin/cazcoind-rpc)
+[![NPM Package](https://img.shields.io/npm/v/@cazproject/cazcoind-rpc.svg)](https://www.npmjs.org/package/@cazproject/cazcoind-rpc)
 
 > Cazcoin Client Library to connect to Cazcoin Core (cazcoind) via RPC
 
@@ -10,7 +10,7 @@
 cazcoind-rpc runs on [node](http://nodejs.org/), and can be installed via [npm](https://npmjs.org/):
 
 ```bash
-npm install @cazcoin/cazcoind-rpc
+npm install @cazproject/cazcoind-rpc
 ```
 
 ## Usage
@@ -27,8 +27,8 @@ Config parameters :
 
 Promise vs callback based
 
-  - `require('@cazcoin/cazcoind-rpc/promise')` to have promises returned
-  - `require('@cazcoin/cazcoind-rpc')` to have callback functions returned
+  - `require('@cazproject/cazcoind-rpc/promise')` to have promises returned
+  - `require('@cazproject/cazcoind-rpc')` to have callback functions returned
 	
 ### Examples
 
@@ -47,7 +47,7 @@ var config = {
 Promise based:
 
 ```javascript
-var RpcClient = require('@cazcoin/cazcoind-rpc/promise');
+var RpcClient = require('@cazproject/cazcoind-rpc/promise');
 var rpc = new RpcClient(config);
 
 rpc.getRawMemPool()
@@ -68,8 +68,8 @@ Callback based (legacy):
 
 ```javascript
 var run = function() {
-  var bitcore = require('@cazcoin/cazcore-lib');
-  var RpcClient = require('@cazcoin/cazcoind-rpc');
+  var bitcore = require('@cazproject/cazcore-lib');
+  var RpcClient = require('@cazproject/cazcoind-rpc');
   var rpc = new RpcClient(config);
 
   var txids = [];
@@ -115,7 +115,7 @@ var run = function() {
 You can dynamically access to the help of each method by doing
 
 ```
-const RpcClient = require('@cazcoin/cazcoind-rpc');
+const RpcClient = require('@cazproject/cazcoind-rpc');
 var client = new RPCclient({
     protocol:'http',
     user: 'user',
